@@ -15,14 +15,19 @@ function App() {
       const randomNumber = Math.floor(Math.random() * 6 ) + 1;
       newDice.push({
         value: randomNumber,
-        isHeld: false,
+        isHeld: true,
         id: nanoid()
       })
     }
     return newDice
   }
 
-  const diceElements = dice.map(die => <Die key={die.id} value={die.value} />)
+  function holdDice(id){
+    console.log(id)
+  }
+
+
+  const diceElements = dice.map(die => <Die key={die.id} value={die.value} isHeld={die.isHeld} holdDice={holdDice}/>)
 
   const rollDice = () => {
     setDice(allNewDice)
@@ -33,9 +38,7 @@ function App() {
       <div className="dice-container">
         {diceElements}
       </div>
-      <button onClick={rollDice} className="roll-dice">
-        Roll
-      </button>
+      <button className="roll-dice" onClick={rollDice}>Roll</button>
     </main>
   )
 }

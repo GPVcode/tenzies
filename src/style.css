@@ -12,19 +12,22 @@ body {
 main {
   background-color: #F5F5F5;
   height: 400px;
-  max-width: 800px;
+  max-width: 100%;
   border-radius: 5px;
   padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .dice-container {
   display: grid;
   grid-template: auto auto / repeat(5, 1fr);
   gap: 20px;
+  
 }
 
 .die-face {
@@ -36,7 +39,6 @@ main {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  background-color: white;
 }
 
 .die-num {
