@@ -49,14 +49,16 @@ function App() {
   )
 
   const rollDice = (id) => {
-    setDice(prevDice => prevDice.map(die => {
-      return die.isHeld === true ? die : newDieGenerator()
-    }))
+    if(!tenzies){
+      setDice(prevDice => prevDice.map(die => {
+        return die.isHeld === true ? die : newDieGenerator()
+      }))
+    } else {
+      setTenzies(false)
+      setDice(generateNewDice())
+    }
 }
-  const newGame = (event) => {
-    setTenzies(false)
-    setDice(generateNewDice())
-  }
+
 
 
   return(
@@ -67,7 +69,7 @@ function App() {
       <div className="dice-container">
         {diceElements}
       </div>
-      <button onClick={tenzies ? newGame : rollDice} className="roll-dice">{tenzies ? "New Game" : "Roll Dice"}</button>
+      <button onClick={rollDice} className="roll-dice">{tenzies ? "New Game" : "Roll Dice"}</button>
 
     </main>
   )
