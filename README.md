@@ -1,9 +1,10 @@
   # Tenzies!
   <h3>Roll until all dice are the same</h3>
 
-  <!-- <a href="https://tenzi-react.netlify.app/"><h3>Try me!</h3></a>
+  <a href="https://tenzies-two.vercel.app/"><h3>Try me!</h3></a>
+  
 
-  [![Netlify Status](https://api.netlify.com/api/v1/badges/08045f0f-324b-4b71-9612-42a3707454e8/deploy-status)](https://app.netlify.com/sites/tenzi-react/deploys) -->
+  [![Vercel](https://tenzies-two.vercel.app/)](https://tenzies-two.vercel.app/)
 
 </div>
   
