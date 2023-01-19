@@ -4,7 +4,7 @@
   <a href="https://tenzies-two.vercel.app/"><h3>Try me!</h3></a>
   
 
-  [![Vercel](https://tenzies-two.vercel.app/)](https://tenzies-two.vercel.app/)
+  https://tenzies-two.vercel.app/
 
 </div>
   
